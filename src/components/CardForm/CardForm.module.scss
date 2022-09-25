@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+.cardForm {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .cardForm {
+    flex-direction: column;
+  }
+}
