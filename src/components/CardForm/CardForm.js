@@ -2,11 +2,11 @@ import styles from './CardForm.module.scss';
 import { useState } from 'react';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
-const CardFrom = (props) => {
+const CardFrom = ({ action, columnId }) => {
   const [title, setTitle] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.action({ title: title }, props.columnId);
+    action({ title: title }, columnId);
     setTitle('');
   };
 
