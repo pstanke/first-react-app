@@ -14,6 +14,7 @@ const SearchForm = () => {
   };
   useEffect(() => {
     dispatch(updateSearchstring(searchValue));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
