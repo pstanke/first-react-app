@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardsRedux';
 const CardFrom = ({ columnId }) => {
   const [title, setTitle] = useState('');
   const dispatch = useDispatch();
