@@ -12,10 +12,17 @@
   font-weight: bold;
 }
 button {
+  color: $color-gray;
   border: none;
   background: $color-light;
   cursor: pointer;
 }
+button:hover {
+  color: $color-dark;
+}
 .isFavorite {
+  color: $color-warning;
+}
+.isFavorite:hover {
   color: $color-warning;
 }
